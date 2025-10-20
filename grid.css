@@ -1,0 +1,28 @@
+.div {
+ display: grid;
+ grid-template-columns: repeat(4,1fr);
+ gap: 15px;
+ padding: 20px;
+ border-radius: 10px;
+ background-color: blue;
+ overflow-x: auto;
+ white-space: nowrap;
+}
+
+img{
+    border-radius: 5px;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        width: 0%;
+    }
+    to {
+        width:100%;
+    }
+}
+

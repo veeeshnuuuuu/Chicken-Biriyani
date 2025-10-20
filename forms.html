@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>form</title>
+<link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <input id="ele" type="button" value="form" style="border-radius: 5px; background-color: #ec5959; border-width: 2px; padding: 10px; border-style:solid ; font-size: 30px; font-family: monospace; width: 49%;"></div>
+
+    <fieldset id="for" style="display:none;"><legend style="color: #000000; font-size: large;">register form</legend>
+    <form id="" action="index.html" method="get"><marquee>details adikyada</marquee><div>
+name:<br>
+        <input class="s" type="text" placeholder="enter name" name="usr"><br>
+number: <br> <input  class="s" type="number" placeholder="number " name="usr"><br>
+pass: <br>  <input class="s" type="password" placeholder="pass plss" name="usr"><br>
+email: <br> <input class="s" type="email" placeholder="mail plss" name="usr"><br>
+        <br><input  type="submit" value="sign-in" style="border-radius: 5px; background-color: #5fec5f; border-width: 2px; border-style:solid ; padding: 10px; font-size: 30px; font-family: monospace; width: 50%;">
+        <input id="el" type="reset" value="clear" style="border-radius: 5px; background-color: #ec5959; border-width: 2px; padding: 10px; border-style:solid ; font-size: 30px; font-family: monospace; width: 49%;"></div>
+    </form>
+    </fieldset>
+</body>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const myElement = document.getElementById('ele');
+  const elem = document.getElementById('for');
+  var click = true;
+
+  myElement.addEventListener('click', function() {
+
+    elem.style.display = 'block'; 
+  });
+});
+</script>
+</html>

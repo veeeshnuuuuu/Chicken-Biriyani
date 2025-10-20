@@ -1,0 +1,45 @@
+.s{
+
+        font-size: 20px;
+        position:relative;
+        width:100%;
+        border-radius: 5px;
+        border-width: 2px;
+        border-color: #000000;
+        border-style:solid;
+        background-color: rgb(255, 255, 255);
+        color: antiquewhite;
+         
+        
+    }
+
+body {
+        background-color: rgb(6, 216, 253);
+        animation: fadeIn 1s ease-in-out;
+
+    }
+fieldset {
+        color: rgb(247, 247, 247); 
+        background-color: rgb(1, 175, 243); 
+        border-color: #000000;
+        border-style:dashed;
+    }
+
+@keyframes fadeIn { 
+  from { 
+    opacity: 1; 
+    transform: translateY(-500px); 
+  } 
+  to { 
+    opacity: 1; 
+    transform: translateY(0); 
+  } 
+}
+
+@starting-style {
+  .s {
+    display: contents; /* Or block, flex, etc. - the state *before* display:none */
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
