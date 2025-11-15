@@ -1,0 +1,48 @@
+<html>
+    <head><title>007</title>
+    </head>
+    <body>
+        <p id="para">car</p>
+        <button onclick=" document.getElementById('para').innerHTML='bike'">
+            click here for change
+
+        </button>
+     <script >
+        function hi(){
+
+        
+        alert('hellooo')
+        document.getElementById('para').innerHTML='blah blah blah';   
+        } 
+
+     </script>
+     <button onclick="hi()">
+         click here
+
+     </button>
+     <select name="colors" id="colors" onchange="clrs()">
+            <option value="red" >red</option>
+            <option value="yellow">yellow</option>
+            <option value="green">green</option>
+            <option value="blue">blue</option>
+        </select>
+
+        <script>
+            function clrs(){
+                colors=document.getElementById('colors').value
+                document.body.style.backgroundColor = colors
+            }
+        </script>
+        <input type="text"  id="data1">
+        <input type="text" id="data2" onkeydown="changedata()">
+
+
+        <script>
+            function changedata()
+            {
+                secondbox=document.getElementById('data2').value
+                document.getElementById('data1').value=secondbox
+            }
+        </script>
+    </body>                               
+</html>
